@@ -12,6 +12,10 @@
 		845ECAFB1D14F6A5005C5158 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845ECAF91D14F6A5005C5158 /* Main.storyboard */; };
 		845ECAFD1D14F6A5005C5158 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845ECAFC1D14F6A5005C5158 /* Assets.xcassets */; };
 		845ECB001D14F6A5005C5158 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845ECAFE1D14F6A5005C5158 /* LaunchScreen.storyboard */; };
+		845ECB081D14FC5D005C5158 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845ECB071D14FC5D005C5158 /* Item.swift */; };
+		845ECB0A1D14FF02005C5158 /* Cell0TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845ECB091D14FF02005C5158 /* Cell0TableViewCell.swift */; };
+		845ECB0C1D14FF75005C5158 /* Cell1TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845ECB0B1D14FF75005C5158 /* Cell1TableViewCell.swift */; };
+		845ECB0E1D1501F7005C5158 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845ECB0D1D1501F7005C5158 /* DataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		845ECAFC1D14F6A5005C5158 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		845ECAFF1D14F6A5005C5158 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		845ECB011D14F6A5005C5158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		845ECB071D14FC5D005C5158 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		845ECB091D14FF02005C5158 /* Cell0TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell0TableViewCell.swift; sourceTree = "<group>"; };
+		845ECB0B1D14FF75005C5158 /* Cell1TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell1TableViewCell.swift; sourceTree = "<group>"; };
+		845ECB0D1D1501F7005C5158 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +65,13 @@
 				845ECAF51D14F6A5005C5158 /* AppDelegate.swift */,
 				845ECAF71D14F6A5005C5158 /* ViewController.swift */,
 				845ECAF91D14F6A5005C5158 /* Main.storyboard */,
+				845ECB071D14FC5D005C5158 /* Item.swift */,
 				845ECAFC1D14F6A5005C5158 /* Assets.xcassets */,
 				845ECAFE1D14F6A5005C5158 /* LaunchScreen.storyboard */,
 				845ECB011D14F6A5005C5158 /* Info.plist */,
+				845ECB091D14FF02005C5158 /* Cell0TableViewCell.swift */,
+				845ECB0B1D14FF75005C5158 /* Cell1TableViewCell.swift */,
+				845ECB0D1D1501F7005C5158 /* DataSource.swift */,
 			);
 			path = TableViewMoreA1;
 			sourceTree = "<group>";
@@ -136,7 +148,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845ECB0E1D1501F7005C5158 /* DataSource.swift in Sources */,
 				845ECAF81D14F6A5005C5158 /* ViewController.swift in Sources */,
+				845ECB081D14FC5D005C5158 /* Item.swift in Sources */,
+				845ECB0A1D14FF02005C5158 /* Cell0TableViewCell.swift in Sources */,
+				845ECB0C1D14FF75005C5158 /* Cell1TableViewCell.swift in Sources */,
 				845ECAF61D14F6A5005C5158 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +272,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.all2sale.TableViewMoreA1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -267,6 +284,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.all2sale.TableViewMoreA1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
